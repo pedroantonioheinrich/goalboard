@@ -1,0 +1,138 @@
+.login-page{
+    background-color: #fff;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    background-color: #ffffff;
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.201);
+
+}
+
+.h1-form{
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+}
+
+.input-email{
+    background-color: #f7f7f7;
+    width: 90%;
+    height: 28px;
+    padding-left: 5px;
+    color: rgb(28, 28, 28);
+    font-size: 14px;
+    border: 1px solid rgba(128, 128, 128, 0.392);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+.input-email:focus{
+    border: 2px solid rgba(153, 153, 255, 0.83);
+}
+.input-email::placeholder{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.289);
+}
+
+.input-password{
+    background-color: #f7f7f7;
+    width: 90%;
+    height: 28px;
+
+    padding-left: 5px;
+    color: rgb(28, 28, 28);
+    font-size: 14px;
+    border: 1px solid rgba(128, 128, 128, 0.392);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+.input-password:focus{
+    border: 2px solid rgba(153, 153, 255, 0.83);
+}
+.input-password::placeholder{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.289);
+}
+
+.button-show-password{
+    background-color: rgba(48, 197, 177, 0.83);
+    width: 90%;
+    height: 28px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.button-show-password:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: rgba(4, 4, 71, 0.83);
+}
+
+
+.button-form{
+    background-color: rgba(62, 62, 205, 0.83);
+    width: 90%;
+    height: 28px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button-form:disabled{
+    background-color: rgb(149, 149, 149);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+
+.span-form{
+
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-form{
+    color: rgba(255, 42, 42, 0.696);
+    font-size: 12px;
+    font-style: italic;
+}
+
+.spinner{
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,12 @@
+.dashboard-page{
+    background-color: antiquewhite;
+    width: 100dvw;
+    height: 100dvh;
+}
+.h1-dashboard{
+    color: black;
+}
+
+.button-logout-dashboard{
+    cursor: pointer;
+}
