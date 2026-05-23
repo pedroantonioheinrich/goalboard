@@ -22,7 +22,9 @@ export function Dashboard() {
     <div className="dashboard-page">
       <h1 className="h1-dashboard">Welcome, {email??"User"}</h1>
       <LogoutButton onLogout={handleLogout}/>
-      <button onClick={()=> navigate('/profile')}>Go to Profile</button>
+      <button onClick={()=> navigate('/profile')}>Profile</button>
+      <button onClick={()=> navigate('/portfolio')}>Portfolio</button>
+      
     </div>
     
 

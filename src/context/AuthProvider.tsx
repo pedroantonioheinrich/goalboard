@@ -22,7 +22,13 @@ export function AuthProvider({
     localStorage.removeItem("auth")
     localStorage.removeItem("userEmail")
     setIsAuthenticated(false);
+    setUser(null)
     
+  }
+
+  function updateUserEmail(email: string){
+    setUser({email})
+    localStorage.setItem("userEmail", email)
   }
 
   return (
@@ -32,6 +38,7 @@ export function AuthProvider({
         user,
         login,
         logout,
+        updateUserEmail
       }}
     >
       {children}

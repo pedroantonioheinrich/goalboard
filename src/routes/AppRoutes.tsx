@@ -5,6 +5,7 @@ import { Home } from "../pages/Home"
 import { About } from "../pages/About"
 import { ProtectedRoute } from "./ProtectedRoute.tsx";
 import { Profile } from "../pages/Profile.tsx"
+import { Portfolio } from "../pages/Portfolio.tsx"
 
 export function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ export function AppRoutes() {
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/profile" element={<Profile />}/>
+        <Route path="/portfolio" element={<Portfolio />}/>
       </Routes>
     </BrowserRouter>
   );
